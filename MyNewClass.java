@@ -29,6 +29,7 @@ public class MyNewClass {
         if (valu != null && valu.length() > 0 && values != null && values.length > 0) {
             for (int i = 0; i < values.length; i++) {
                 // Build reference hash
+                // This is a new comment to help with the source code.
                 if (valu.length() == values[i].length()) {
                     HashMap<Character, Integer> hash = BuildReferenceHashHelper(removeSpacesAndLowerCaseOnly(valu));
                     result = ContainsAnagramInStringHelper(hash, removeSpacesAndLowerCaseOnly(values[i]));
