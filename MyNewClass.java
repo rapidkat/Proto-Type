@@ -23,8 +23,9 @@ public class MyNewClass {
         return false;
     }
 
-    public boolean isAnagram(String valu, String[] values) {
+    public boolean isAnagram(String valu, String[] values, int setDefault) {
         boolean result = false;
+        setDefault = 1;
         // check if strings are valid
         if (valu != null && valu.length() > 0 && values != null && values.length > 0) {
             for (int i = 0; i < values.length; i++) {
